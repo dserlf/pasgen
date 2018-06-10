@@ -64,8 +64,6 @@ class passGenerator():
 try:
     run = passGenerator()
     run.print_hello()
-    if len(sys.argv) < 2:
-        sys.exit()
     run.generate_the_lists()
     run.init_the_symbols()
     run.generate_the_pass()
