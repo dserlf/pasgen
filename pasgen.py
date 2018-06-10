@@ -50,7 +50,7 @@ class passGenerator():
     def generate_the_pass(self):
         self.max = int(input('Сколько символов должно быть в пароле: '))
         for i in range(0, self.max):
-            self.rand = random.randint(1, len(self.list_init) - 1)
+            self.rand = random.randint(1, len(self.list_init))
             self.password += str(self.list_init[self.rand])
         print(self.line)
         print('Результат: ' + self.password)
